@@ -13,17 +13,57 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
-  <body>
     
     <h1>TAKASHI MURAKAMI</h1>
     
     <hr>
 
-    <p><a href="/index.html">HOME</a></p>
-    <p><a href="/about.html">ABOUT</a></p>
-    <p><a href="/works.html">WORKS</a></p>
-    <p><a href="/socialmedia.html">SOCIAL MEDIA</a></p>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+  
+</style>
+</head>
+
+    
+<ul>
+  <li><a class="active" href="/index.html">HOME</a></li>
+  <li><a href="/works.html">WORKS</a></li>
+  <li><a href="/about.html">ABOUT</a></li>
+  <li style="float:right"><a href="/socialmedia.html">SOCIAL MEDIA</a></li>
+</ul>
+    
     <hr>
 
     <h2>WORKS</h2>
@@ -39,8 +79,7 @@
     <p><a href="#artwork2">Artwork 2</a></p>
     <p><a href="#artwork3">Artwork 3</a></p>
     <p><a href="#artwork4">Artwork 4</a></p>
-    <p><a href="#artwork5">Artwork 5</a></p>
-
+  
     <hr>
     <div id="artwork1"><h2>Artwork 1</h2></div>
 
@@ -58,9 +97,7 @@
       massa maximus egestas et ut quam.
     </p>
 
-    <button type="button">
       <a href="https://www.artsy.net/artist/takashi-murakami">More info</a>
-    </button>
 
     <div id="artwork2"><h2>Artwork 2</h2></div>
 
@@ -78,9 +115,7 @@
       massa maximus egestas et ut quam.
     </p>
 
-    <button type="button">
       <a href="https://www.artsy.net/artist/takashi-murakami">More info</a>
-    </button>
 
     <div id="artwork3"><h2>Artwork 3</h2></div>
 
@@ -98,9 +133,7 @@
       massa maximus egestas et ut quam.
     </p>
 
-    <button type="button">
       <a href="https://www.artsy.net/artist/takashi-murakami">More info</a>
-    </button>
 
     <div id="artwork4"><h2>Artwork 4</h2></div>
 
@@ -117,35 +150,105 @@
       venenatis. Nunc et lorem non nisi cursus vestibulum. Aliquam a turpis at
       massa maximus egestas et ut quam.
     </p>
-
-    <button type="button">
-      <a href="https://www.artsy.net/artist/takashi-murakami">More info</a>
-    </button>
-
-    <div id="artwork5"><h2>Artwork 5</h2></div>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in turpis
-      tortor. Donec nec enim posuere, pharetra quam ut, auctor nulla. Phasellus
-      at placerat felis. Phasellus dui enim, ultrices eget pulvinar a, commodo a
-      ipsum. Curabitur iaculis mollis nisi, eu tincidunt velit varius ac. Sed
-      bibendum tincidunt lacinia. Phasellus congue est metus, et vestibulum
-      felis pretium sed. Nullam quis sapien molestie, venenatis lacus in, ornare
-      purus. Proin maximus, nibh eget fermentum rhoncus, justo tortor cursus
-      nibh, id egestas ex ante sed mi. Pellentesque consequat dolor dui, sit
-      amet fermentum diam congue quis. Nam suscipit quam tincidunt pharetra
-      venenatis. Nunc et lorem non nisi cursus vestibulum. Aliquam a turpis at
-      massa maximus egestas et ut quam.
-    </p>
-
-    <button type="button">
-      <a href="https://www.artsy.net/artist/takashi-murakami">More info</a>
-    </button>
-    <hr>
     
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
+      <a href="https://www.artsy.net/artist/takashi-murakami">More info</a>
+    
+    <hr>
+
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
-  </body>
+
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+</style>
+</head>
+<body>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img_5terre.jpg" alt="A" width="600" height="400">
+    </a>
+    <div class="desc">name</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="B" width="600" height="400">
+    </a>
+    <div class="desc">name</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="C" width="600" height="400">
+    </a>
+    <div class="desc">name</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="D" width="600" height="400">
+    </a>
+    <div class="desc">name</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+ </body>
 </html>

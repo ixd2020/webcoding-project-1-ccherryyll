@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+  <div class="clearfix">
+  <div class="box redbox threecol">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt accumsan tortor, id pharetra felis congue sed. Aliquam sodales vulputate imperdiet. Praesent iaculis diam et lectus euismod luctus.</p>
+  </div>
+  <div class="box yellowbox threecol">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box greenbox threecol">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box bluebox threecol">
+  <p>Some text inside the box.</p>
+  </div> 
+</div>
+
+</body>
+</html>

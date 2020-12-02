@@ -13,35 +13,73 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>  
-  <body>
+     
     <h1>TAKASHI MURAKAMI</h1>
     
     <hr>
     
-    <p><a href="/index.html">HOME</a></p>
-    <p><a href="/about.html">ABOUT</a></p>
-    <p><a href="/works.html">WORKS</a></p>
-    <p><a href="/socialmedia.html">SOCIAL MEDIA</a></p>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+  
+</style>
+</head>
+<body>
+
+    
+<ul>
+  <li><a class="active" href="/index.html">HOME</a></li>
+  <li><a href="/works.html">WORKS</a></li>
+  <li><a href="/about.html">ABOUT</a></li>
+  <li style="float:right"><a href="/socialmedia.html">SOCIAL MEDIA</a></li>
+</ul>
     
     <hr>
     
     <p>
     <h2>SOCIAL MEDIA</h2>
-
-    <button type="button">
-      <a href="https://www.instagram.com/takashipom/?hl=en" target="_blank">Instagram</a>
-    </button>
-    <button type="button">
-      <a href="https://www.facebook.com/TakashiPom/" target="_blank">Facebook</a>
-    </button>
-    <button type="button">
-      <a href="https://twitter.com/takashipom?fbclid=IwAR3DbbMwMZTdw-rz9J41taSfktooQli1nUfRDy419vfo3zxDQdCkK3Y2ohk" target="_blank">Twitter</a>
-    </button>
+  
+ <hr>
+  
+      <a href="https://www.instagram.com/takashipom/?hl=en" target="_blank">INSTAGRAM</a>
+    
+      <a href="https://www.facebook.com/TakashiPom/" target="_blank">FACEBOOK</a>
+    
+      <a href="https://twitter.com/takashipom?fbclid=IwAR3DbbMwMZTdw-rz9J41taSfktooQli1nUfRDy419vfo3zxDQdCkK3Y2ohk" target="_blank">TWITTER</a>
     
     </p>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
+  
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
   </body>

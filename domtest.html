@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+</html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  
+    <h1>TAKASHI MURAKAMI</h1>
+
+    <img
+      src="https://cdn.glitch.com/e337f719-0f42-47a5-bc85-460223c551b5%2Fafter-mazing-through-crowds-of-die-hard-fans-dressed-takashi-takashi-murakami-png-920_958.png?v=1604834349251"
+      width="200"
+    />
+    
+    <hr />
+
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/index.html">HOME</a></li>
+  <li><a href="/works.html">WORKS</a></li>
+  <li><a href="/about.html">ABOUT</a></li>
+  <li style="float:right"><a href="/socialmedia.html">SOCIAL MEDIA</a></li>
+</ul>
+
+  <div class="searchbox">
+  <input type="text" placeholder="Search.." />
+  </div>  
+    
+  </body>
+  <p><a href="/csstest.html">css</a></p>
+  
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    
+    <h1 id="demo1"> </h1>
+    
+    <p id="demo2">Hello???</p>
+    
+    <p onclick="changeText(this)">Click on this text!</p> 
+    <p  onclick="changeText(this)">Click on this paragraph too! </p>
+    <div  onclick="changeText(this)"> What? I can click on this paragraph too?</div>
+  
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+         style="background-color:#D94A38;width:250px;height:20px;padding:50px;">
+         Mouse Over Me</div>
+
+    <div onmouseover="mOver(this)" 
+     style="background-color:yellow;width:300px;height:20px; padding:60px;"> 
+     Mouse over this second div </div>
+
+    <button id="myBtn">Click on Me</button>
+    
+    <script>
+function mOver(obj) {
+  obj.innerHTML = "HIII";
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me";
+}
+
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
+
+document.getElementById("demo1").innerHTML = "Hello World!";
+document.getElementbyId("demo2").innterHTML = "This is my second line!"
+</script>
+    
+
+  </body>
+</html>

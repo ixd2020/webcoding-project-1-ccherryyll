@@ -1,37 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+</html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Hello!</title>
-    
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
-  <body>
+  </head>
+  
     <h1>TAKASHI MURAKAMI</h1>
-    
-     <img
-      src="https://cdn.glitch.com/e337f719-0f42-47a5-bc85-460223c551b5%2Fafter-mazing-through-crowds-of-die-hard-fans-dressed-takashi-takashi-murakami-png-920_958.png?v=1604834349251"
-      width= "200"
-    />
-    <hr>
-    
-    <p><a href="/index.html">HOME</a></p>
-    <p><a href="/about.html">ABOUT</a></p>
-    <p><a href="/works.html">WORKS</a></p>
-    <p><a href="/socialmedia.html">SOCIAL MEDIA</a></p>
-    
-    <hr>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <img
+      src="https://cdn.glitch.com/e337f719-0f42-47a5-bc85-460223c551b5%2Fafter-mazing-through-crowds-of-die-hard-fans-dressed-takashi-takashi-murakami-png-920_958.png?v=1604834349251"
+      width="200"
+    />
+    
+    <hr />
+
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/index.html">HOME</a></li>
+  <li><a href="/works.html">WORKS</a></li>
+  <li><a href="/about.html">ABOUT</a></li>
+  <li style="float:right"><a href="/socialmedia.html">SOCIAL MEDIA</a></li>
+</ul>
+
+  <div class="searchbox">
+  <input type="text" placeholder="Search.." />
+  </div>  
+    
+    <p><a href="/csstest.html">css</a></p>
+    <p><a href="/domtest.html">dom</a></p>
+
   </body>
 </html>
