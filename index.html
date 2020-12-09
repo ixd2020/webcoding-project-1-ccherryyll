@@ -39,27 +39,94 @@
   </div>
 
   <body onload="loadingfinished()">
-    <header>
-      <nav class="topnav" id="mytopnav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
 
-          <li><a href="about.html">About</a></li>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
 
-          <li><a href="work.html">Artworks </a></li>
-          
-          <li><a href="#"><i class="fa fa-search fa-1x"></i
-          ></a></li>
-          
-        </ul>
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
 
-        <div class="hamburger">
-          <a href="#" onclick="mobilemenu()"
-            ><i class="fa fa-bars fa-2x"></i
-          ></a>
-        </div>
-      </nav>
-    </header>
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #555555;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Artworks</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
 
 <div class="main">
     <div class="hero">
@@ -81,7 +148,7 @@
       <div class="pic">
         <img
           src="https://images.artland.com/eyJidWNrZXQiOiJhcnRsYW5kLXVwbG9hZHMiLCJrZXkiOiJ1c2Vycy9jam9oMTN1eDQyYmt1MDg4MDE1YTFha3I1L2FydHdvcmtzL2Nqd3Q5ZjZldjA1YTYwNzk4OThtNHI3N3UvMTlkZDg4MmYtNWQyNi00ZGVmLTlkOGItODBjYWM4OWE3M2Y0LmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6ODB9LCJyb3RhdGUiOm51bGwsInJlc2l6ZSI6eyJ3aWR0aCI6MzAwMCwiaGVpZ2h0IjozMDAwLCJmaXQiOiJpbnNpZGUifX19"
-        
+          width="450" height="450"
         />
         <div class="text">
           <h3>Mr.DOB</h3>
@@ -93,7 +160,8 @@
 
       <div class="pic">
         <img
-          src="https://www.christies.com/img/LotImages/2013/CSK/2013_CSK_09728_0403_000(takashi_murakami_flowers_in_heaven062843).jpg"
+          src="https://www.christies.com/img/LotImages/2013/CSK/2013_CSK_09728_0403_000(takashi_murakami_flowers_in_heaven062843).jpg"  
+          width="450" height="450"
           
         />
         <div class="text">
@@ -107,7 +175,7 @@
       <div class="pic">
         <img
           src="https://sothebys-md.brightspotcdn.com/8f/e9/2503a8dd453286546c6b1c5fe058/n10370-127-web-crop.jpg"
-             width="2000"
+          width="450" height="450"
         />
         <div class="text">
           <h3>Flower Mantago</h3>

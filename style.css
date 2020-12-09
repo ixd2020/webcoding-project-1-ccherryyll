@@ -23,7 +23,7 @@
   width: 40px;
   height: 40px;
   position: relative;
-  animation: sk-chase 2.5s infinite linear both;
+  animation: sk-chase 2s infinite linear both;
 }
 
 .sk-chase-dot {
@@ -198,16 +198,13 @@ i {
 
 .intro {
   text-align: center;
-  colour: white;
+  color: #ffffff;
+  font-size: 30px;
 }
 
 .feature {
   display: flex;
   margin-bottom: 100px;
-}
-
-.pic img {
-  width: 100%;
 }
 
 .pic {
@@ -223,13 +220,16 @@ i {
 }
 
 .video {
-  background-image: url(https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2FIMG_0059-2.jpg?v=1605339424464);
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-943748360-1588874833.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 300px;
   background-position: center;
   overflow: hidden;
   position: relative;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
 }
 
 .blank {
@@ -358,12 +358,12 @@ footer p {
   padding: 300px;
   background-position: center;
   overflow: hidden;
-  position: relative;
+  position: relative
 }
 
 .about {
   display: flex;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .date {
@@ -373,31 +373,5 @@ footer p {
 
 .about2 {
   display: flex;
-  background-color: #000000;
-}
-
-/*mobile reponsive*/
-@media screen and (max-width: 600px) {
-  /*navabar index page(home)*/
-  .topnav.responsive ul {
-    display: block;
-    width: 100%;
-    position: absolute;
-    /*bring the navbar infront becuz of position*/
-    z-index: 300;
-    top: 70px;
-    background-color: #26456D;
-  }
-
-  .topnav ul {
-    display: none;
-  }
-
-  .topnav {
-    position: relative;
-  }
-
-  .hamburger {
-    display: block;
-  }
+  background-color: #ffffff;
 }
