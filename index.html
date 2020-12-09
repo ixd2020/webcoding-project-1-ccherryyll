@@ -1,83 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-</html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Hello!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2FAsset%202.png?v=1605709435805"
+      type="image/x-icon"
+    />
+    <title>Home</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
+
+  <div id="loader">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </div>
+
+  <body onload="loadingfinished()">
+    <header>
+      <nav class="topnav" id="mytopnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="work.html">Artworks </a></li>
+          
+          <li><a href="#"><i class="fa fa-search fa-1x"></i
+          ></a></li>
+          
+        </ul>
+
+        <div class="hamburger">
+          <a href="#" onclick="mobilemenu()"
+            ><i class="fa fa-bars fa-2x"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+<div class="main">
+    <div class="hero">
+      <div class="intro">
+        <h1>Takashi Murakami</h1>
+        <h4> </h4>
+        <button class="explore" style="vertical-align:middle">
+          <span><a href="#content">Explore...</a></span>
+        </button>
+      </div>
+    </div>
+    <div id="content">
+      <h1>
+        Featured works
+      </h1>
+    </div>
+
+    <div class="feature">
+      <div class="pic">
+        <img
+          src="https://images.artland.com/eyJidWNrZXQiOiJhcnRsYW5kLXVwbG9hZHMiLCJrZXkiOiJ1c2Vycy9jam9oMTN1eDQyYmt1MDg4MDE1YTFha3I1L2FydHdvcmtzL2Nqd3Q5ZjZldjA1YTYwNzk4OThtNHI3N3UvMTlkZDg4MmYtNWQyNi00ZGVmLTlkOGItODBjYWM4OWE3M2Y0LmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6ODB9LCJyb3RhdGUiOm51bGwsInJlc2l6ZSI6eyJ3aWR0aCI6MzAwMCwiaGVpZ2h0IjozMDAwLCJmaXQiOiJpbnNpZGUifX19"
+        
+        />
+        <div class="text">
+          <h3>Mr.DOB</h3>
+          <p>
+            1993
+          </p>
+        </div>
+      </div>
+
+      <div class="pic">
+        <img
+          src="https://www.christies.com/img/LotImages/2013/CSK/2013_CSK_09728_0403_000(takashi_murakami_flowers_in_heaven062843).jpg"
+          
+        />
+        <div class="text">
+          <h3>Flower in Heaven</h3>
+          <p>
+            2010
+          </p>
+        </div>
+      </div>
+
+      <div class="pic">
+        <img
+          src="https://sothebys-md.brightspotcdn.com/8f/e9/2503a8dd453286546c6b1c5fe058/n10370-127-web-crop.jpg"
+             width="2000"
+        />
+        <div class="text">
+          <h3>Flower Mantago</h3>
+          <p>2006</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <h1>Takashi Murakami</h1>
+      <h4> </h4>
+      <button class="explore" style="vertical-align:middle">
+        <span><a href="about.html">Learn More...</a></span>
+      </button>
+    </div>
   
-    <h1>TAKASHI MURAKAMI</h1>
+</div>
 
-    <img
-      src="https://cdn.glitch.com/e337f719-0f42-47a5-bc85-460223c551b5%2Fafter-mazing-through-crowds-of-die-hard-fans-dressed-takashi-takashi-murakami-png-920_958.png?v=1604834349251"
-      width="200"
-    />
-    
-    <hr />
-
-<html>
-<head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-</style>
-</head>
-<body>
-
-<ul>
-  <li><a class="active" href="/index.html">HOME</a></li>
-  <li><a href="/works.html">WORKS</a></li>
-  <li><a href="/about.html">ABOUT</a></li>
-  <li style="float:right"><a href="/socialmedia.html">SOCIAL MEDIA</a></li>
-</ul>
-
-  <div class="searchbox">
-  <input type="text" placeholder="Search.." />
-  </div>  
-    
-    <p><a href="/csstest.html">css</a></p>
-    <p><a href="/domtest.html">dom</a></p>
-
+    <!-- include the Glitch button to show what the webpage is about and
+            to make it easier for folks to view source and remix 
+      <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+      <script src="https://button.glitch.me/button.js" defer></script>-->
   </body>
 </html>
