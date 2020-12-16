@@ -323,7 +323,7 @@ input {
   margin-bottom: 50px;
 }
 
-/*woodprinting*/
+/*contact us*/
 
 .top {
   text-align: center;
@@ -389,7 +389,7 @@ input {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #2F6A95;
+  background-color: black;
 }
 
 .container:hover .overlay {
@@ -397,7 +397,7 @@ input {
 }
 
 .character {
-  color: #FDFBE9;
+  color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -541,7 +541,7 @@ input {
     width: 100%;
   }
 
-  /*woodprint page*/
+  /*contact page*/
   .history {
     flex-direction: column;
   }
