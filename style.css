@@ -111,12 +111,12 @@ body {
 
 /* ALL unvisited link */
 a:link {
-  color: #1b3d5f;
+  color: black;
 }
 
 /* ALL visited link */
 a:visited {
-  color: #1b3d5f;
+  color: black;
 }
 
 /*ALl NAV BAR*/
@@ -132,23 +132,23 @@ a:visited {
 }
 
 i {
-  color: #fdfbe9;
+  color: white;
 }
 
 .mode {
   text-align: right;
-  background-color: #2F6A95;
+  background-color: black;
   padding-right: 30px;
 }
 
 .mode a {
-  color: #fdfbe9;
+  color: white;
   text-align: center;
   font-size: 12px;
 }
 
 .mode a:hover {
-  color: #EFDCB6;
+  color: grey;
   text-decoration: underline;
 }
 
@@ -172,7 +172,7 @@ i {
 
 .topnav ul li a {
   text-decoration: none;
-  color: #fdfbe9;
+  color: white;
 }
 
 /*Search bar */
@@ -461,7 +461,7 @@ input {
     /*bring the navbar infront becuz of position*/
     z-index: 300;
     top: 70px;
-    background-color: #26456D;
+    background-color: black;
   }
 
   .topnav ul {
