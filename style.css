@@ -12,7 +12,7 @@
   height: 100vh;
   width: 100vw;
   z-index: 400;
-  background-color: #000000;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
   width: 40px;
   height: 40px;
   position: relative;
-  animation: sk-chase 2s infinite linear both;
+  animation: sk-chase 2.5s infinite linear both;
 }
 
 .sk-chase-dot {
@@ -109,9 +109,20 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+/* ALL unvisited link */
+a:link {
+  color: #1b3d5f;
+}
+
+/* ALL visited link */
+a:visited {
+  color: #1b3d5f;
+}
+
+/*ALl NAV BAR*/
 .topnav {
   display: flex;
-  background-color: #000000;
+  background-color: black;
   justify-content: flex-end;
 }
 
@@ -122,6 +133,23 @@ body {
 
 i {
   color: #fdfbe9;
+}
+
+.mode {
+  text-align: right;
+  background-color: #2F6A95;
+  padding-right: 30px;
+}
+
+.mode a {
+  color: #fdfbe9;
+  text-align: center;
+  font-size: 12px;
+}
+
+.mode a:hover {
+  color: #EFDCB6;
+  text-decoration: underline;
 }
 
 .topnav ul {
@@ -135,6 +163,10 @@ i {
 }
 
 .topnav ul li:hover {
+  background-color: #333333;
+}
+
+.topnav ul li:active {
   background-color: #444444;
 }
 
@@ -143,22 +175,47 @@ i {
   color: #fdfbe9;
 }
 
+/*Search bar */
+
+.search {
+  position: relative;
+}
+
+.search:hover input {
+  width: 80%;
+}
+
+.search a {
+  margin-left: 10px;
+}
+
+input {
+  width: 0px;
+  height: 30px;
+  border: none;
+  transition: all 0.3s;
+}
+
+/*Index and home page*/
+
 .explore a {
   text-decoration: none;
-  color: #FDFBE9;
+  color: white;
 }
 
 .explore {
   display: inline-block;
-  background-color: #000000;
+  background-color: black;
   border: none;
   text-align: center;
   width: 150px;
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 20px;
-  color: #FDFBE9;
+  color: white;
   padding: 10px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .explore span {
@@ -187,7 +244,7 @@ i {
 }
 
 .hero {
-  background-image: url(https://media.vogue.in/wp-content/uploads/2019/12/Murakami1-1366x768.jpg);
+  background-image: url(https://cdn.glitch.com/c5ee5549-d451-491f-9a96-779ea1552f12%2F919af0eb-a899-4b45-990e-d0330c9c4766.image.png?v=1608049483831);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 300px;
@@ -198,21 +255,31 @@ i {
 
 .intro {
   text-align: center;
-  color: #ffffff;
-  font-size: 30px;
+  color: white;
+  font-size: 25px;
+  -webkit-text-stroke: 1px black;
 }
 
 .feature {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.pic img {
+  width: 100%;
 }
 
 .pic {
   margin: 20px;
 }
 
+.text {
+  margin-top: 10px;
+}
+
 #content {
   text-align: center;
+  padding: 20px;
 }
 
 #content h1 {
@@ -220,32 +287,22 @@ i {
 }
 
 .video {
-  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-943748360-1588874833.jpg);
+  background-image: url(https://cdn.glitch.com/c5ee5549-d451-491f-9a96-779ea1552f12%2F0cd60240-a2fe-4ecc-a282-410064948b0b.image.png?v=1608049532578);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 300px;
   background-position: center;
   overflow: hidden;
   position: relative;
-  color: #ffffff;
-  text-align: center;
-  font-size: 30px;
+  text-align: left;
+  color: white;
+  font-size: 25px;
+  -webkit-text-stroke: 1px black;
 }
 
 .blank {
   text-align: center;
   margin: 50px;
-}
-
-footer {
-  background-color: #C7DDD2;
-}
-
-footer p {
-  text-align: center;
-  padding: 10px;
-  color: #1B3D5F;
-  margin-top: 20px;
 }
 
 /*artwork page*/
@@ -260,6 +317,10 @@ footer p {
 
 .descript {
   margin: 20px;
+}
+
+.space {
+  margin-bottom: 50px;
 }
 
 /*woodprinting*/
@@ -280,6 +341,7 @@ footer p {
 
 .more {
   margin: auto;
+  margin-right: 30px;
 }
 
 .type {
@@ -298,6 +360,8 @@ footer p {
   background-position: center;
   overflow: hidden;
   position: relative;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .type h2 {
@@ -352,18 +416,20 @@ footer p {
 /*About artist page*/
 
 .face {
-  background-image: url(https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2FHokusaiportrait.jpg?v=1604737313808);
+  background-image: url( );
   background-repeat: no-repeat;
   background-size: cover;
   padding: 300px;
-  background-position: center;
+  background-position: top;
   overflow: hidden;
-  position: relative
+  position: relative;
 }
 
 .about {
   display: flex;
-  background-color: #ffffff;
+  background-color: #EFDCB6;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .date {
@@ -373,5 +439,139 @@ footer p {
 
 .about2 {
   display: flex;
-  background-color: #ffffff;
+  background-color: #EFDCB6;
+  margin-bottom: 50px;
+}
+
+.about2 img {
+  width: 50%;
+}
+
+.about img {
+  width: 50%;
+}
+
+/*mobile reponsive*/
+@media screen and (max-width: 600px) {
+  /*navabar index page(home)*/
+  .topnav.responsive ul {
+    display: block;
+    width: 100%;
+    position: absolute;
+    /*bring the navbar infront becuz of position*/
+    z-index: 300;
+    top: 70px;
+    background-color: #26456D;
+  }
+
+  .topnav ul {
+    display: none;
+  }
+
+  .topnav {
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /*Index page*/
+
+  .hero {
+    padding: 200px;
+  }
+
+  .feature {
+    flex-direction: column;
+  }
+
+  .video {
+    padding: 100px;
+    text-align: left;
+  }
+
+  .back {
+    z-index: 3;
+    padding: 50px;
+  }
+
+  .back h1 {
+    margin-bottom: 10px;
+  }
+
+  .flower img {
+    width: 100px;
+  }
+
+  .flower2 img {
+    width: 100px;
+  }
+
+  /*about page*/
+  .face {
+    padding: 200px;
+  }
+
+  .face h1 {
+    font-size: 30px;
+  }
+
+  .face h4 {
+    font-size: 10px;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about2 {
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .about2 img {
+    width: 100%;
+  }
+
+  /*woodprint page*/
+  .history {
+    flex-direction: column;
+  }
+
+  .history img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .workshop {
+    padding: 100px;
+  }
+
+  .type {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .back2 {
+    font-size: 13px;
+    background-color: #fdfbe9;
+    z-index: 3;
+    padding: 50px;
+  }
+
+  .back2 h1 {
+    margin-bottom: 10px;
+  }
 }

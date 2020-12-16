@@ -15,15 +15,18 @@
     />
     <link
       rel="icon"
-      href="https://cdn.glitch.com/aba2f34e-33d0-4e5b-84b8-6b530f0806e6%2FAsset%202.png?v=1605709435805"
+      href="https://cdn.glitch.com/c5ee5549-d451-491f-9a96-779ea1552f12%2Ffavicon-32x32%5B1%5D.png?v=1608047262103"
       type="image/x-icon"
     />
+
     <title>Home</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <script src="/script.js" defer></script>
   </head>
 
@@ -37,162 +40,158 @@
       <div class="sk-chase-dot"></div>
     </div>
   </div>
-
-  <body onload="loadingfinished()">
-
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-* {box-sizing: border-box;}
-
-body {
-  margin: 0;
-  font-family: "Noto Sans", sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: black;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #444444;
-  color: white;
-}
-
-.topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #555555;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
-</style>
-</head>
-<body>
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Artworks</a>
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</div>
-
-<div class="main">
-    <div class="hero">
-      <div class="intro">
-        <h1>Takashi Murakami</h1>
-        <h4> </h4>
-        <button class="explore" style="vertical-align:middle">
-          <span><a href="#content">Explore...</a></span>
-        </button>
-      </div>
-    </div>
-    <div id="content">
-      <h1>
-        Featured works
-      </h1>
-    </div>
-
-    <div class="feature">
-      <div class="pic">
-        <img
-          src="https://images.artland.com/eyJidWNrZXQiOiJhcnRsYW5kLXVwbG9hZHMiLCJrZXkiOiJ1c2Vycy9jam9oMTN1eDQyYmt1MDg4MDE1YTFha3I1L2FydHdvcmtzL2Nqd3Q5ZjZldjA1YTYwNzk4OThtNHI3N3UvMTlkZDg4MmYtNWQyNi00ZGVmLTlkOGItODBjYWM4OWE3M2Y0LmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6ODB9LCJyb3RhdGUiOm51bGwsInJlc2l6ZSI6eyJ3aWR0aCI6MzAwMCwiaGVpZ2h0IjozMDAwLCJmaXQiOiJpbnNpZGUifX19"
-          width="450" height="450"
-        />
-        <div class="text">
-          <h3>Mr.DOB</h3>
-          <p>
-            1993
-          </p>
-        </div>
-      </div>
-
-      <div class="pic">
-        <img
-          src="https://www.christies.com/img/LotImages/2013/CSK/2013_CSK_09728_0403_000(takashi_murakami_flowers_in_heaven062843).jpg"  
-          width="450" height="450"
-          
-        />
-        <div class="text">
-          <h3>Flower in Heaven</h3>
-          <p>
-            2010
-          </p>
-        </div>
-      </div>
-
-      <div class="pic">
-        <img
-          src="https://sothebys-md.brightspotcdn.com/8f/e9/2503a8dd453286546c6b1c5fe058/n10370-127-web-crop.jpg"
-          width="450" height="450"
-        />
-        <div class="text">
-          <h3>Flower Mantago</h3>
-          <p>2006</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="video">
-      <h1>Takashi Murakami</h1>
-      <h4> </h4>
-      <button class="explore" style="vertical-align:middle">
-        <span><a href="about.html">Learn More...</a></span>
-      </button>
-    </div>
   
-</div>
+  <body onload="loadingfinished()">
+    <div class="mode">
+    </div>
+
+    <header>
+      <nav class="topnav" id="mytopnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="work.html">Artworks</a></li>
+          
+          <li><a href="contact.html">Contact Us</a></li>
+
+          <li class="search">
+            <input type="text" />
+            <a href="#"><i class="fa fa-search fa-1x"></i></a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <a href="#" onclick="mobilemenu()"
+            ><i class="fa fa-bars fa-2x"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+      <div class="hero">
+        <div class="intro">
+          <h1>Katsushika Hokusai</h1>
+          <h6>Famous Japanese Contemporary Artist</h6>
+          <button class="explore" style="vertical-align:middle">
+            <span><a href="about.html">More info...</a></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="content">
+        <h1>
+          Artworks
+        </h1>
+      </div>
+
+      <div class="feature">
+        <div class="pic">
+          <img
+            src=" "
+          />
+          <div class="text">
+            <h3>image</h3>
+            <p>
+              loren
+            </p>
+          </div>
+        </div>
+
+        <div class="pic">
+          <img
+            src=" "
+          />
+          <div class="text">
+            <h3>image</h3>
+            <p>
+              loren
+            </p>
+          </div>
+        </div>
+
+        <div class="pic">
+          <img
+            src=" "
+          />
+          <div class="text">
+            <h3>image</h3>
+            <p>1234</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <div class="back">
+          <h1>Artworks</h1>
+          <h6>Creating art since 1993</h6>
+          <button class="explore" style="vertical-align:middle">
+            <span><a href="work.html">Explore more...</a></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="blank">
+        <h1>
+          More artworks
+        </h1>
+      </div>
+
+      <div class="feature">
+        <div class="pic">
+          <img
+            src=" "
+          />
+          <div class="text">
+            <h3>image</h3>
+            <p>
+              1234
+            </p>
+          </div>
+        </div>
+
+        <div class="pic">
+          <img
+            src=" "
+          />
+          <div class="text">
+            <h3>
+              image
+            </h3>
+            <p>
+              1234
+            </p>
+          </div>
+        </div>
+
+        <div class="pic">
+          <img
+            src=" "
+          />
+          <div class="text">
+            <h3>image</h3>
+            <p>
+              1234
+            </p>
+          </div>
+        </div>
+
+        <div class="pic">
+          <img
+            src=" "
+          />
+          <div class="text">
+            <h3>
+              image
+            </h3>
+            <p>1234
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- include the Glitch button to show what the webpage is about and
             to make it easier for folks to view source and remix 
