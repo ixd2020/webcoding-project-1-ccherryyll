@@ -416,18 +416,22 @@ input {
 /*About artist page*/
 
 .face {
-  background-image: url( );
+  background-image: url(https://www.thecollector.com/wp-content/uploads/2019/08/artwork-by-takashi-murakami.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 300px;
   background-position: top;
   overflow: hidden;
   position: relative;
+  text-align: left;
+  color: white;
+  font-size: 25px;
+  -webkit-text-stroke: 1px black;
 }
 
 .about {
   display: flex;
-  background-color: #EFDCB6;
+  background-color: white;
   margin-bottom: 50px;
   margin-top: 50px;
 }
@@ -439,8 +443,9 @@ input {
 
 .about2 {
   display: flex;
-  background-color: #EFDCB6;
+  background-color: white;
   margin-bottom: 50px;
+  font-size:100p
 }
 
 .about2 img {
@@ -498,14 +503,6 @@ input {
 
   .back h1 {
     margin-bottom: 10px;
-  }
-
-  .flower img {
-    width: 100px;
-  }
-
-  .flower2 img {
-    width: 100px;
   }
 
   /*about page*/
